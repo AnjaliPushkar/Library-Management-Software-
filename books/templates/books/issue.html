@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if error %}
+{{error}}
+<br />
+<br />
+{% endif %}
+
+<h1>Book Issue</h1>
+{% csrf_token %}
+<form method='POST' action = '{% url 'issue' %}'>
+{% csrf_token %}
+Username:
+<br />
+<input type="text" name="username">
+<br />
+College Id:
+<br />
+<input type="text" name="clgid">
+<br />
+Book Name:
+<br />
+<input type="text" name="bookname">
+<br />
+Book Id:
+<br />
+<input type="text" name="bookid">
+<br />
+Library Code:
+<br />
+<input type="password" name="code">
+<br />
+<br />
+<input class='btn btn-primary' type='submit' value='Issue' />
+</form>
+
+
+{% endblock %}

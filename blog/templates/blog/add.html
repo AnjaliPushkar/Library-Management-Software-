@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+
+{% if error %}
+{{error}}
+<br />
+<br />
+{% endif %}
+
+<h1>Add Book</h1>
+{% csrf_token %}
+<form method='POST' action = '{% url 'add' %}' enctype='multipart/form-data'>
+{% csrf_token %}
+Library Code:
+<br />
+<input type="password" name="code">
+<br />
+Book Title:
+<br />
+<input type="text" name="title">
+<br />
+Book Id:
+<br />
+<input type="text" name="bookno">
+<br />
+Description:
+<br />
+<input type='textbox' name='body' />
+<br />
+No. of Books:
+<br />
+<input type='text' name='no' />
+<br />
+Icon:
+<br />
+<input type='file' name='icon' />
+<br />
+Image:
+<br />
+<input type='file' name='image' />
+<br />
+<br />
+<input class='btn btn-primary' type='submit' value='Add book' />
+</form>
+
+
+{% endblock %}
