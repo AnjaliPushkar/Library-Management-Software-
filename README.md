@@ -1,8 +1,8 @@
 # Library-Management-Software
-<img src = "/clg/static/book.jpg" height = "200" width="200" align="left"><br />
 
 Library Management Software works for saving data. It can used to check the updates of books in library for students well as teachers with coming to the library. It can be used for saving information like which book was return, issue and add. Issue, Return and Add new books columns can only be access by admins who have the library code.
 
+<img src = "/clg/static/book.jpg" height = "200" width="200" align="left"><br />
 
 ## Working and Features
 
